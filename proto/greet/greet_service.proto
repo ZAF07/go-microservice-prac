@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option go_package = "./rpc";
+package greet;
+import "proto/greet/greet.proto";
+
+service GreetService {
+  rpc Greetings(Greeting) returns (Reply) {};
+}
