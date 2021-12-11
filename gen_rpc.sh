@@ -1,3 +1,7 @@
 echo 'export GOPATH=$HOME/Go' >> $HOME/.bashrc source $HOME/.bashrc
 
-protoc --proto_path=proto --go_out=proto/auto --go_opt=paths=source_relative greet.proto greet_service.proto
+
+protoc --go_out=proto/rpc --go_opt=paths=source_relative --go-grpc_out=proto/rpc --go-grpc_opt=paths=source_relative ./proto/greet/greet.proto ./proto/greet/greet_service.proto
+
+echo "DONE"
+# protoc -I greet.proto -I=$GOPATH/bin --go-grpc_out=:. greet.proto

@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package greet;
-import "github.com/ZAF07/go-microservice-prac/proto";
-
-service GreetService {
-  rpc Greetings(greet.Greeting) returns (greet.Reply) {};
-}
