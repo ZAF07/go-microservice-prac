@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ZAF07/go-microservice-prac/constants"
-	"github.com/ZAF07/go-microservice-prac/manager"
-	"github.com/ZAF07/go-microservice-prac/proto/rpc"
+	"github.com/ZAF07/go-microservice-prac/api/rpc"
+	"github.com/ZAF07/go-microservice-prac/pkg/constants"
+	"github.com/ZAF07/go-microservice-prac/pkg/manager"
 )
 
 // Define a service struct to represent the service

@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"strings"
 
-	rpc "github.com/ZAF07/go-microservice-prac/proto/rpc"
-	"github.com/ZAF07/go-microservice-prac/router"
+	"github.com/ZAF07/go-microservice-prac/api/rest/router"
+	rpc "github.com/ZAF07/go-microservice-prac/api/rpc"
 	"github.com/ZAF07/go-microservice-prac/service/greet"
 	"github.com/gin-gonic/gin"
 	"github.com/soheilhy/cmux"

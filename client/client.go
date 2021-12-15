@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ZAF07/go-microservice-prac/proto/rpc"
+	"github.com/ZAF07/go-microservice-prac/api/rpc"
 	"google.golang.org/grpc"
 )
 
