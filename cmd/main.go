@@ -1,5 +1,6 @@
 package main
 
+// g
 import (
 	"fmt"
 	"log"
