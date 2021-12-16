@@ -31,7 +31,7 @@ func main() {
 	httpListener := m.Match(cmux.HTTP1Fast())
 	grpclistener := m.Match(cmux.Any())
 	
-	// Run GO routine to run both processes at the same time
+	// Run GO routine to run both servers at diff processes at the same time
 	go serveGRPC(grpclistener)
 	go serveHTTP(httpListener)
 
