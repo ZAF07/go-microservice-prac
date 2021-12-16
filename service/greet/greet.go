@@ -29,13 +29,13 @@ func (s *Greet) Greetings(ctx context.Context, req *rpc.Greeting) (resp *rpc.Rep
 	fmt.Println("RECIEVED A REQUEST !!")
 	fmt.Printf("CONTEXT RECEIVED : %+v\n", ctx.Value(constants.CtxKey("name")))
 	fmt.Println("SAVING FILE...")
+	// this replicates performing a task that takes time but does not block our main process
 	saveErr := manager.Save()
 	if saveErr != nil {
 		fmt.Println("SAVE ERROR")
 	} else {
 		fmt.Println("Save success")
 	}
-// this replicates performing a task that takes time but does not block our main process
 	manager.Shout()
 	resp = &rpc.Reply{
 		Reply: "Yes hello",
