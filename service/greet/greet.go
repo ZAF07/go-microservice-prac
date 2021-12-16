@@ -35,7 +35,7 @@ func (s *Greet) Greetings(ctx context.Context, req *rpc.Greeting) (resp *rpc.Rep
 	} else {
 		fmt.Println("Save success")
 	}
-// this
+// this replicates performing a task that takes time but does not block our main process
 	manager.Shout()
 	resp = &rpc.Reply{
 		Reply: "Yes hello",
